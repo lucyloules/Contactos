@@ -2,7 +2,7 @@
     // Se copia de materialize el modal,funcion click  y se modifica para nuestro ejercicio
     $('.modal').modal();//se llama y levanta al modal
 
-    $('#add').click(function() {//evento click en botón "+"
+    $('#agree').click(function() {//evento click en botón "+"
    //creo variables
     var name = $('.name').val(); //guardo el nombre del contacto
     var phone = $('.phone').val(); //guardo el telefono del contaco
@@ -27,14 +27,13 @@
         </li>
       </ul>
       </div> */  
-      deleteContact(); //se llama a la funcion borrar
+    deleteContact(); //se llama a la funcion borrar
 
     });
 
     function deleteContact(){//funcion que borra un contacto
 
     $('.trash').click(function(){//evento click en botón borrar de un contacto
-
       $(this).parent().parent().parent().remove();//this apunta al boton eliminar
       // y parent() permite eliminar los contenedores de ese botón
     })

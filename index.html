@@ -2,64 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Agenda de Contactos</title>
+
+  <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Carrusel</title>
-  <link rel="stylesheet" type="image/icon" href="assets/img/camera.ico">
+
+  <!-- Compiled and minified CSS Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Estilo css -->
   <link rel="stylesheet" href="assets/css/estilos.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.css">
 </head>
 <body>
-  <header>
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Christoph Kaula</h1>
-        <h4>Photography</h4>
-      </div>
-    </div>
-  </header>
-  <div class="container">
-    <div class="slideshow">
-      <ul class="slider">
-        <li>
-          <img src="assets/img/ardilla1.jpg" alt="">
-          <section class="caption">
-          </section>
-        </li>
-        <li>
-          <img src="assets/img/ardilla2.jpg" alt="">
-          <section class="caption">
-          </section>
-        </li>
-        <li>
-          <img src="assets/img/ardilla3.jpg" alt="">
-          <section class="caption">
-          </section>
-        </li>
-        <li>
-          <img src="assets/img/ardilla4.jpg" alt="">
-          <section class="caption">
-          </section>
-        </li>
-        <li>
-          <img src="assets/img/ardilla5.jpg" alt="">
-          <section class="caption">
-          </section>
-        </li>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Lista de Contactos</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-light btn"><i class="large material-icons">add</i></a></li>
+        <li><a class="waves-effect waves-light btn"><i class="material-icons right">search</i></a></li>
+        <li>jQuery</li>
       </ul>
-      <ol class="pagination">
+    </div>
+  </nav>
+    <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
-      </ol>
-      <div class="left">
-        <span class="fa fa-chevron-left"></span>
-      </div>
-
-      <div class="right">
-        <span class="fa fa-chevron-right"></span>
-      </div>
-    </div>  
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
   </div>
 
-  <script src="assets/js/jquery-3.1.0.min.js"></script>
-  <script src="assets/js/main.js"></script>
+
+  <!--Import jQuery before materialize.js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
